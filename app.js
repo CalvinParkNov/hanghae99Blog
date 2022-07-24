@@ -15,7 +15,7 @@ const port = process.env.PORT || 3000;
 const start = async () => {
   try {
     await connectDB(process.env.MONGO_URI);
-    app.listen(port, console.log(`서버가 포트:  ${port}에서 시작했습니다.`));
+    app.listen(port, console.log(`Server is listening port ${port}....`));
   } catch (error) {
     console.log(error);
   }
