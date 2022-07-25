@@ -36,7 +36,7 @@ const postSchema = new mongoose.Schema({
 postSchema.plugin(autoIncrement.plugin, {
   model: "Post",
   field: "postNumber",
-  startAt: 1,
+  startAt: 0,
   increment: 1,
 });
 
