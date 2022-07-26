@@ -10,7 +10,7 @@ app.get("/", (req, res) => {
   res.send('<h1>스파르타 개시판</h1><a href="/posts">개시판 입장</a>');
 });
 app.use("/posts", post);
-app.use("/comment", comment);
+app.use("/comments", comment);
 
 const port = process.env.PORT || 3000;
 
